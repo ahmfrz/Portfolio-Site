@@ -11,6 +11,7 @@
   4. Chrome or any other browser(Chrome preferred)
   5. InkScape is required if you want to edit the logo [Link to download](https://inkscape.org/en/download/windows/)
   6. Python is required if you would like to host the site on local server
+  7. LiveReload if interested in running the watch task with LiveReload [Link to download](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 - Others
   1. Chrome or any other browser(Chrome prefered)
   
