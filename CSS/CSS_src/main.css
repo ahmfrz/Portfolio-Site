@@ -1,7 +1,6 @@
 /*
 Common
 */
-
 img{
     max-width: 100%;
 }
@@ -26,10 +25,14 @@ header, nav, footer, section, article, div{
     margin-right: 1em;
 }
 
+a:hover{
+    color: #2bc;
+    transition: 0.5s;
+}
+
 /*
 Header
 */
-
 .header-container{
     max-width: 100%;
     margin-left: 0.5em;
@@ -62,8 +65,9 @@ Header
 .profile{
     font-size: 1em;
 }
+
 /*
-article
+Highlight
 */
 .main-content{
     margin-left: 0.5em;
@@ -88,11 +92,12 @@ featured
     margin-right: 0.8em;
 }
 
-.featured-container h1{
+.heading-2{
     color: #7d97ad;
     text-align: left;
     margin-top: 0.5em;
-    margin-bottom: 0.1em;
+    margin-bottom: 0.25em;
+    margin-left: 0.5em;
 }
 
 .featured{
@@ -127,6 +132,7 @@ media queries
         font-size:1.5em;
     }
 }
+
 @media screen and (min-width: 600px){
     .title{
         font-size: 3em;
@@ -161,7 +167,7 @@ media queries
         font-size: 2em;
     }
 
-    .featured-container h1{
+    .heading-2{
         font-size: 2em;
     }
 
