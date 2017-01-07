@@ -21,14 +21,14 @@
   3. If you would like to change the folder structure, simple change the path in config files
   
 #Running the site
-  - Double click on **Index.html** which can be found in the root folder of Portfolio project
+  1. Double click on **Index.html** which can be found in the root folder of Portfolio project
   
 #Running on local server
-  - Make sure Python is installed on your machine
-  - Double click on **CreateLocalServer.py** to host *Index.html* on local server at port 8080
-  - Navigate to (http://localhost:8080/) on your favorite browser
+  1. Make sure Python is installed on your machine
+  2. Double click on **CreateLocalServer.py** to host *Index.html* on local server at port 8080
+  3. Navigate to (http://localhost:8080/) on your favorite browser
   
 #Additional Information
-  - This website has been created with intention to showcase frontend development skills of the author
-  - The images used in the project are taken from http://loremflickr.com/
-  - The author intends to update the sections marked with *TODO* 
+  1. This website has been created with intention to showcase frontend development skills of the author
+  2. The images used in the project are taken from http://loremflickr.com/
+  3. The author intends to update the sections marked with *TODO* 
