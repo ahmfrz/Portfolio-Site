@@ -28,7 +28,7 @@ module.exports = function(grunt){
 
         // Watch file changes
         watch:{
-            files:[config.jsSrcDir + "*", config.cssSrcDir + "*"],
+            files:[config.jsSrcDir + "*", config.cssSrcDir + "*", "Index.html"],
             tasks:['concat', 'cssmin'],
             options:{
                 livereload: true
