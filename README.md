@@ -10,6 +10,7 @@
   3. Node is required for grunt and other package installations [Link to download](https://nodejs.org/en/download/)
   4. Chrome or any other browser(Chrome preferred)
   5. InkScape is required if you want to edit the logo [Link to download](https://inkscape.org/en/download/windows/)
+  6. Python is required if you would like to host the site on local server
 - Others
   1. Chrome or any other browser(Chrome prefered)
   
@@ -20,6 +21,11 @@
   
 #Running the site
   - Double click on **Index.html** which can be found in the root folder of Portfolio project
+  
+#Running on local server
+  - Make sure Python is installed on your machine
+  - Double click on **CreateLocalServer.py** to host *Index.html* on local server at port 8080
+  - Navigate to (http://localhost:8080/) on your favorite browser
   
 #Additional Information
   - This website has been created with intention to showcase frontend development skills of the author
