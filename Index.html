@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -16,7 +16,9 @@
 <body>
     <header class="header-container">
         <div class="header-logo">
-            <img src="logo.svg" alt='logo'>
+            <a href="#">
+                <img src="logo.svg" alt='logo'>
+            </a>
         </div>
         <div class="header-title">
             <h1 class="title">Ahmed Faraz Ansari</h1>
@@ -24,63 +26,73 @@
         </div>
     </header>
 
-    <div class="container">
-        <section class="main-content">
-            <hr class="separator">
-            <h2 class="heading-2">Highlight</h2>
-            <picture>
-                <source media="(min-width:1024px)"
-                srcset="Images_Dist/portfolio_highlight-1024_large_2x.jpeg 2x,
-                Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1x" type="image/jpeg" />
-                <source sizes="100vw"
-                srcset="Images_Dist/portfolio_highlight-800_large.jpeg 800w,
-                Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
-                Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                <img sizes="100vw" src="Images_Dist/portfolio_highlight-1024_large_1x.jpeg" srcset="Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1024w,
-                Images_Dist/portfolio_highlight-800_large.jpeg 800w,
-                Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
-                Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" alt="Portfolio highlight">
-            </picture>
-        </section>
+    <hr class="separator">
+    <article class="main-content">
+        <h2 class="heading-2">Highlight</h2>
+        <picture>
+            <source media="(min-width:1024px)"
+            srcset="Images_Dist/portfolio_highlight-1024_large_2x.jpeg 2x,
+            Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1x" type="image/jpeg" />
+            <source sizes="100vw"
+            srcset="Images_Dist/portfolio_highlight-800_large.jpeg 800w,
+            Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
+            Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
+            <img sizes="100vw" src="Images_Dist/portfolio_highlight-1024_large_1x.jpeg" srcset="Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1024w,
+            Images_Dist/portfolio_highlight-800_large.jpeg 800w,
+            Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
+            Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" alt="Portfolio highlight">
+        </picture>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tellus ligula, semper vel odio vitae, sagittis commodo est. Pellentesque eu nisi tristique, consequat nulla dapibus, bibendum sem. Sed elementum est scelerisque, consequat diam at, ornare dui. Cras eleifend sem velit, at mollis nunc lacinia a. Duis dictum efficitur nisl ac lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum volutpat odio dui. Curabitur eu orci convallis, finibus risus non, tempus eros. Mauris scelerisque porttitor nisl. Suspendisse ullamcorper mauris eu sem tempus, ac pellentesque risus laoreet. Fusce porta malesuada magna, non scelerisque sapien blandit id. Fusce metus eros, vulputate sit amet tincidunt vel, pharetra a augue. Ut risus leo, mattis eu sem dictum, sagittis tincidunt dui. Quisque facilisis dui id magna feugiat lacinia.
+        </p>
 
         <section class="featured-container">
             <h2 class="heading-2">Featured work</h2>
             <div class="featured">
                 <section class="featured-item">
-                    <picture>
-                        <source media="(min-width:1024px)"
-                        srcset="Images_Dist/portfolio_featured-1024_large_2x.jpeg 2x,
-                        Images_Dist/portfolio_featured-1024_large_1x.jpeg 1x" type="image/jpeg" />
-                        <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 800w,
-                        Images_Dist/portfolio_featured-600_mid.jpeg 600w,
-                        Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                        <img src="Images_Dist/portfolio_featured-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
-                        srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 1024w,
-                        Images_Dist/portfolio_featured-800_large.jpeg 800w,
-                        Images_Dist/portfolio_featured-600_mid.jpeg 600w,
-                        Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
-                    </picture>
-                    <h3>Portfolio site</h3>
-                    <a href="https://github.com/ahmfrz/Portfolio-Site/">https://github.com/ahmfrz/Portfolio-Site/</a>
+                    <figure>
+                        <picture>
+                            <source media="(min-width:1024px)"
+                            srcset="Images_Dist/portfolio_featured-1024_large_2x.jpeg 2x,
+                            Images_Dist/portfolio_featured-1024_large_1x.jpeg 1x" type="image/jpeg" />
+                            <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 800w,
+                            Images_Dist/portfolio_featured-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
+                            <img src="Images_Dist/portfolio_featured-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
+                            srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 1024w,
+                            Images_Dist/portfolio_featured-800_large.jpeg 800w,
+                            Images_Dist/portfolio_featured-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
+                        </picture>
+                        <figcaption>
+                            <h3>Portfolio site</h3>
+                            <a href="https://github.com/ahmfrz/Portfolio-Site/">https://github.com/ahmfrz/Portfolio-Site/</a>
+                        </figcaption>
+                    </figure>
                 </section>
                 <section class="featured-item">
-                    <picture>
-                        <source media="(min-width:1024px)"
-                        srcset="Images_Dist/portfolio_wip-1024_large_2x.jpeg 2x,
-                        Images_Dist/portfolio_wip-1024_large_1x.jpeg 1x" type="image/jpeg" />
-                        <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 800w,
-                        Images_Dist/portfolio_wip-600_mid.jpeg 600w,
-                        Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                        <img src="Images_Dist/portfolio_wip-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
-                        srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 1024w,
-                        Images_Dist/portfolio_wip-800_large.jpeg 800w,
-                        Images_Dist/portfolio_wip-600_mid.jpeg 600w,
-                        Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" alt="Portfolio work in progress">
-                    </picture>
-                    <h3>Work in progress</h3>
-                    <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
+                    <figure>
+                        <picture>
+                            <source media="(min-width:1024px)"
+                            srcset="Images_Dist/portfolio_wip-1024_large_2x.jpeg 2x,
+                            Images_Dist/portfolio_wip-1024_large_1x.jpeg 1x" type="image/jpeg" />
+                            <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 800w,
+                            Images_Dist/portfolio_wip-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
+                            <img src="Images_Dist/portfolio_wip-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
+                            srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 1024w,
+                            Images_Dist/portfolio_wip-800_large.jpeg 800w,
+                            Images_Dist/portfolio_wip-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" alt="Portfolio work in progress">
+                        </picture>
+                        <figcaption>
+                            <h3>Work in progress</h3>
+                            <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
+                        </figcaption>
+                    </figure>
                 </section>
                 <section class="featured-item">
+                   <figure>
                     <picture>
                        <source media="(min-width:1024px)"
                        srcset="Images_Dist/portfolio_holdon-1024_large_2x.jpeg 2x,
@@ -94,15 +106,18 @@
                        Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
                        Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
                    </picture>
-                   <h3>Hold on</h3>
-                   <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
-               </section>
-           </div>
-       </section>
-   </div>
+                   <figcaption>
+                       <h3>Hold on</h3>
+                       <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
+                   </figcaption>
+               </figure>
+           </section>
+       </div>
+   </section>
+</article>
 
-   <footer>
-    <hr class="separator">
+<hr class="separator">
+<footer>
     <div class="social-links-container">
         <ul class="social-links">
             <li><a class="fontawesome-linkedin" href="https://in.linkedin.com/in/ahmed-faraz-ansari-455ba211a"></a></li>
