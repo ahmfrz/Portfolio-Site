@@ -12,7 +12,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: "Open Sans Condensed", "sans-serif";
 }
 
 p {
@@ -25,13 +25,13 @@ header, nav, footer, section, article, div {
 }
 
 [class*="fontawesome-"]:before {
-    font-family: 'FontAwesome', 'sans-serif';
+    font-family: "FontAwesome", "sans-serif";
     margin-left: 5em;
     margin-right: 1em;
 }
 
 a:hover {
-    color: #0002bc;
+    color: #2bc;
     transition: 0.5s;
 }
 

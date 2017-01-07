@@ -15,11 +15,18 @@ module.exports = function(grunt){
             }
         },
 
+        concat_css:{
+            all: {
+                src: [config.cssSrcDir + "*"],
+                dest: config.cssSrcDir + "main-all.css"
+            },
+        },
+
         // Minify css files
         cssmin:{
             target:{
                 files:[{
-                    src:[config.cssSrcDir + "*"],
+                    src:[config.cssSrcDir + "main-all.css"],
                     dest: config.cssDistDir + 'main.min.css',
                     ext: '.min.css'
                 }]
@@ -96,5 +103,5 @@ module.exports = function(grunt){
     });
 
     // Register all tasks
-    grunt.registerTask('default', 'concat', 'cssmin','clean', 'mkdir', 'responsive_images', 'watch');
+    grunt.registerTask('default', 'concat','concat_css', 'cssmin','clean', 'mkdir', 'responsive_images', 'watch');
 }

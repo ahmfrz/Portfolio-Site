@@ -8,20 +8,22 @@
     <meta name="description" content="Ahmed's portfolio site to demonstrate his frontend skills">
     <meta name="keywords" content="frontend, html5, css, html, grunt">
     <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" type="text/css" href="CSS/CSS_dist/main.min.css">
+    <link rel="stylesheet" href="CSS/CSS_dist/main.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" type="text/css" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <link rel="stylesheet" href="http://weloveiconfonts.com/api/?family=fontawesome">
+    <script src="JS/JS_dist/jQuery-3.1.1.min.js"></script>
+    <script async src="JS/JS_dist/bootstrap.min.js"></script>
 </head>
 <body>
     <header class="header-container">
         <div class="header-logo">
             <a href="#">
-                <img src="logo.svg" alt='logo'>
+                <img data-toggle="popover" data-placement="right" data-trigger="hover" title="The AF logo" src="logo.svg" alt='logo'>
             </a>
         </div>
         <div class="header-title">
-            <h1 class="title">Ahmed Faraz Ansari</h1>
+            <h1 class="title" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Learner">Ahmed Faraz Ansari</h1>
             <h2 class="profile">Sr. Analyst</h2>
         </div>
     </header>
@@ -37,7 +39,7 @@
                     srcset="Images_Dist/portfolio_highlight-800_large.jpeg 800w,
             Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
             Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-            <img sizes="100vw" src="Images_Dist/portfolio_highlight-1024_large_1x.jpeg" srcset="Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1024w,
+            <img data-toggle="popover" data-placement="top" data-trigger="hover" title="The dummy highlights of Ahmed's work" sizes="100vw" src="Images_Dist/portfolio_highlight-1024_large_1x.jpeg" srcset="Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1024w,
             Images_Dist/portfolio_highlight-800_large.jpeg 800w,
             Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
             Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" alt="Portfolio highlight">
@@ -58,7 +60,7 @@
                             <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 800w,
                             Images_Dist/portfolio_featured-600_mid.jpeg 600w,
                             Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                            <img src="Images_Dist/portfolio_featured-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
+                            <img data-toggle="popover" data-placement="left" data-trigger="hover" title="This portfolio site on Github" src="Images_Dist/portfolio_featured-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
                                  srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 1024w,
                             Images_Dist/portfolio_featured-800_large.jpeg 800w,
                             Images_Dist/portfolio_featured-600_mid.jpeg 600w,
@@ -79,12 +81,13 @@
                             <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 800w,
                             Images_Dist/portfolio_wip-600_mid.jpeg 600w,
                             Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                            <img src="Images_Dist/portfolio_wip-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
+                            <img data-toggle="popover" data-placement="top" data-trigger="hover" title="Place for future projects" src="Images_Dist/portfolio_wip-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
                                  srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 1024w,
                             Images_Dist/portfolio_wip-800_large.jpeg 800w,
                             Images_Dist/portfolio_wip-600_mid.jpeg 600w,
                             Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" alt="Portfolio work in progress">
                         </picture>
+                        <!-- TODO: Update caption and link once new projects are ready -->
                         <figcaption>
                             <h3>Work in progress</h3>
                             <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
@@ -96,16 +99,17 @@
                         <picture>
                             <source media="(min-width:1024px)"
                                     srcset="Images_Dist/portfolio_holdon-1024_large_2x.jpeg 2x,
-                       Images_Dist/portfolio_holdon-1024_large_1x.jpeg 1x" type="image/jpeg" />
+                            Images_Dist/portfolio_holdon-1024_large_1x.jpeg 1x" type="image/jpeg" />
                             <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_holdon-1024_large_1x.jpeg 800w,
-                       Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
-                       Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
-                            <img src="Images_Dist/portfolio_holdon-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
+                            Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" type="image/jpeg" />
+                            <img data-toggle="popover" data-placement="top" data-trigger="hover" title="Place for future projects" src="Images_Dist/portfolio_holdon-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw"
                                  srcset="Images_Dist/portfolio_holdon-1024_large_1x.jpeg 1024w,
-                       Images_Dist/portfolio_holdon-800_large.jpeg 800w,
-                       Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
-                       Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
+                            Images_Dist/portfolio_holdon-800_large.jpeg 800w,
+                            Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
+                            Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
                         </picture>
+                        <!-- TODO: Update caption and link once new projects are ready -->
                         <figcaption>
                             <h3>Hold on</h3>
                             <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
