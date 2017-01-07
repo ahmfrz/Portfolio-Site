@@ -18,8 +18,8 @@
             <img src="logo.svg" alt='logo'>
         </div>
         <div class="header-title">
-            <h1>Ahmed Faraz Ansari</h1>
-            <h3>Sr. Analyst</h3>
+            <h1 class="title">Ahmed Faraz Ansari</h1>
+            <h3 class="profile">Sr. Analyst</h3>
         </div>
     </header>
 
@@ -27,53 +27,95 @@
         <section class="main-content">
             <hr class="separator">
             <picture>
-                <source srcset="" type=""></source>
-                <source srcset="" type=""></source>
-                <img src="http://loremflickr.com/g/840/720/india" alt="">
-            </picture>
-        </section>
+                <source media="(min-width:1024px)"
+                srcset="Images_Dist/portfolio_highlight-1024_large_2x.jpeg 2x,
+                Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1x">
+            </source>
+            <source srcset="Images_Dist/portfolio_highlight-800_large.jpeg 800w,
+            Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
+            Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w">
+        </source>
+        <img src="Images_Dist/portfolio_highlight-1024_large_1x.jpeg" sizes="100vw" srcset="Images_Dist/portfolio_highlight-1024_large_2x.jpeg 2x,
+        Images_Dist/portfolio_highlight-1024_large_1x.jpeg 1x,
+        Images_Dist/portfolio_highlight-800_large.jpeg 800w,
+        Images_Dist/portfolio_highlight-600_mid.jpeg 600w,
+        Images_Dist/portfolio_highlight-350x350_small_cropped.jpeg 350w" alt="Portfolio highlight">
+    </picture>
+</section>
 
-        <section class="featured">
-            <h1>Featured work</h1>
-            <section class="featured-item">
-                <picture>
-                    <source srcset="" type=""></source>
-                    <source srcset="" type=""></source>
-                    <img src="http://loremflickr.com/g/640/480/india" alt="">
-                </picture>
-                <h3>Portfolio site</h3>
-                <a href="https://github.com/ahmfrz/Portfolio-Site/">https://github.com/ahmfrz/Portfolio-Site/</a>
-            </section>
-            <section class="featured-item">
-                <picture>
-                    <source srcset="" type=""></source>
-                    <source srcset="" type=""></source>
-                    <img src="http://loremflickr.com/g/640/480/india" alt="">
-                </picture>
-                <h3>Work in progress</h3>
-                <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/Portfolio-Site/</a>
-            </section>
-            <section class="featured-item">
-                <picture>
-                    <source srcset="" type=""></source>
-                    <source srcset="" type=""></source>
-                    <img src="http://loremflickr.com/g/640/480/india" alt="">
-                </picture>
-                <h3>Hold on</h3>
-                <a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/Portfolio-Site/</a>
-            </section>
-        </section>
-    </article>
+<section class="featured-container">
+    <h1>Featured work</h1>
+    <section class="featured">
+        <section class="featured-item">
+            <picture>
+                <source media="(min-width:1024px)"
+                srcset="Images_Dist/portfolio_featured-1024_large_2x.jpeg 2x,
+                Images_Dist/portfolio_featured-1024_large_1x.jpeg 1x">
+            </source>
+            <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_featured-1024_large_1x.jpeg 800w,
+            Images_Dist/portfolio_featured-600_mid.jpeg 600w,
+            Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w">
+        </source>
+        <img src="Images_Dist/portfolio_featured-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_featured-1024_large_2x.jpeg 2x,
+        Images_Dist/portfolio_featured-1024_large_1x.jpeg 1x,
+        Images_Dist/portfolio_featured-800_large.jpeg 800w,
+        Images_Dist/portfolio_featured-600_mid.jpeg 600w,
+        Images_Dist/portfolio_featured-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
+    </picture>
+    <h3>Portfolio site</h3>
+    <a href="https://github.com/ahmfrz/Portfolio-Site/">https://github.com/ahmfrz/Portfolio-Site/</a>
+</section>
+<section class="featured-item">
+    <picture>
+        <source media="(min-width:1024px)"
+        srcset="Images_Dist/portfolio_wip-1024_large_2x.jpeg 2x,
+        Images_Dist/portfolio_wip-1024_large_1x.jpeg 1x">
+    </source>
+    <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_wip-1024_large_1x.jpeg 800w,
+    Images_Dist/portfolio_wip-600_mid.jpeg 600w,
+    Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w">
+</source>
+<img src="Images_Dist/portfolio_wip-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_wip-1024_large_2x.jpeg 2x,
+Images_Dist/portfolio_wip-1024_large_1x.jpeg 1x,
+Images_Dist/portfolio_wip-800_large.jpeg 800w,
+Images_Dist/portfolio_wip-600_mid.jpeg 600w,
+Images_Dist/portfolio_wip-350x350_small_cropped.jpeg 350w" alt="Portfolio work in progress">
+</picture>
+<h3>Work in progress</h3>
+<a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
+</section>
+<section class="featured-item">
+    <picture>
+     <source media="(min-width:1024px)"
+     srcset="Images_Dist/portfolio_holdon-1024_large_2x.jpeg 2x,
+     Images_Dist/portfolio_holdon-1024_large_1x.jpeg 1x">
+ </source>
+ <source sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_holdon-1024_large_1x.jpeg 800w,
+ Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
+ Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w">
+</source>
+<img src="Images_Dist/portfolio_holdon-1024_large_1x.jpeg" sizes="(min-width:600px) 50vw, 100vw" srcset="Images_Dist/portfolio_holdon-1024_large_2x.jpeg 2x,
+Images_Dist/portfolio_holdon-1024_large_1x.jpeg 1x,
+Images_Dist/portfolio_holdon-800_large.jpeg 800w,
+Images_Dist/portfolio_holdon-600_mid.jpeg 600w,
+Images_Dist/portfolio_holdon-350x350_small_cropped.jpeg 350w" alt="Portfolio featured">
+</picture>
+<h3>Hold on</h3>
+<a href="https://github.com/ahmfrz/">https://github.com/ahmfrz/</a>
+</section>
+</section>
+</section>
+</article>
 
-    <footer>
-        <hr class="separator">
-        <div class="social-links-container">
-            <ul class="social-links">
-                <li><a class="fontawesome-linkedin" href="https://in.linkedin.com/in/ahmed-faraz-ansari-455ba211a"></a></li>
-                <li><a class="fontawesome-github" href="https://github.com/ahmfrz"></a></li>
-                <li><a class="fontawesome-google-plus" href="https://plus.google.com/101730400204789704600"></a></li>
-            </ul>
-        </div>
-    </footer>
+<footer>
+    <hr class="separator">
+    <div class="social-links-container">
+        <ul class="social-links">
+            <li><a class="fontawesome-linkedin" href="https://in.linkedin.com/in/ahmed-faraz-ansari-455ba211a"></a></li>
+            <li><a class="fontawesome-github" href="https://github.com/ahmfrz"></a></li>
+            <li><a class="fontawesome-google-plus" href="https://plus.google.com/101730400204789704600"></a></li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

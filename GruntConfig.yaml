@@ -1,5 +1,5 @@
 imgSrcDir: Images/Images_src/
-imgDistDir: Images/Images_dist/
+imgDistDir: Images_Dist/
 jsSrcDir: JS/JS_src/
 jsDistDir: JS/JS_dist/
 cssSrcDir: CSS/CSS_src/

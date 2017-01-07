@@ -26,6 +26,65 @@ module.exports = function(grunt){
             }
         },
 
+        // Clear out the images directory if it exists
+        clean: {
+          dev: {
+            src: [config.imgDistDir],
+        },
+    },
+
+    // Generate the images directory if it is missing
+    mkdir: {
+      dev: {
+        options: {
+          create: [config.imgDistDir]
+      },
+  },
+},
+
+        // Create versions of images to serve different sized devices
+        responsive_images:{
+            dev:{
+                options:{
+                    sizes:[{
+                        width: 1024,
+                        suffix: '_large_2x',
+                        quality: 40
+                    },
+                    {
+                        width: 1024,
+                        suffix: '_large_1x',
+                        quality: 25
+                    },
+                    {
+                        width: 800,
+                        suffix: '_large',
+                        quality: 30
+                    },
+                    {
+                        width: 600,
+                        suffix: '_mid',
+                        quality: 30
+                    },
+                    {
+                        // Create cropped images for small displays
+                        width: 350,
+                        height: 350,
+                        aspectRatio:false,
+                        gravity:'East',
+                        suffix: '_small_cropped',
+                        quality:50
+                    }]
+                },
+                files:[{
+                    expand: true,
+                    src:["*.{jpeg,jpg,png,gif}"],
+                    cwd:config.imgSrcDir,
+                    dest:config.imgDistDir
+                }]
+            }
+        },
+
         // Watch file changes
         watch:{
             files:[config.jsSrcDir + "*", config.cssSrcDir + "*", "Index.html"],
@@ -37,5 +96,5 @@ module.exports = function(grunt){
     });
 
     // Register all tasks
-    grunt.registerTask('default', 'concat', 'cssmin', 'watch');
+    grunt.registerTask('default', 'concat', 'cssmin','clean', 'mkdir', 'responsive_images', 'watch');
 }
